@@ -16,17 +16,23 @@
 <form id ="pizzaOrder">
   <input type="radio" name="size" value="10">
   <label for="10">Small</label>
-  <input type="radio" name="size" value="15">
+  <input type="radio" checked name="size" value="15">
   <label for="15">Medium</label>
   <input type="radio" name="size" value="17">
   <label for="17">Large</label>
   <input type="radio" name="size" value="20">
   <label for="20">Xtra-Large</label>
-  <p>Meat!</p>
+  <h2>Meat!</h2>
   <div id="meatToppings">
     <label><input type="Checkbox" name="lilPep" value="2">Little Pepperoni</label>
     <label><input type="Checkbox" name="bigPep" value="3">Big Pepperoni</label>
     <label><input type="Checkbox" name="chicken" value="2">Chicken</label>
+  </div>
+  <div id="vegetableToppings">
+    <h2>Vegetables</h2>
+    <label><input type="Checkbox" name="greenPeppers" value="2">Green Peppers</label>
+    <label><input type="Checkbox" name="redOnions" value="3">Red Onions</label>
+    <label><input type="Checkbox" name="garlic" value="2">Garlic</label>
   </div>
   <button type="submit">Place your order!</button>
 </form>
