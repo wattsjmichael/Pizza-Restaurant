@@ -6,7 +6,9 @@ function Pizza(size, meat, veggie, addon) {
   this.price = "";
 }
 
-function pizzaSize(){
+Pizza.prototype.pizzaPrice = function() {
+  return this.size + this.meat + this.veggie + this.addon;
+}
 
 
 
@@ -14,9 +16,10 @@ $(document).ready(function(){
     $("#pizzaOrder").submit(function(event){
         event.preventDefault();
 
-    $("#button").on('click', function(){
-      output = 
-    })
-   
-    })
-})
+
+        let size = parseInt($("#size").val());
+
+        let newPizza = newPizza(size)
+        $("#result").show();
+    });
+  });
