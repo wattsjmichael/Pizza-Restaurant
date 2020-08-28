@@ -26,8 +26,26 @@ body, html {
  background-color: white;
  background-image: url(/img/Brick.jpg);
  color: white;
+ background-size: cover;
 }
 
 #pizzaOrder {
   text-align:center;
 }
+
+.group-std {
+  padding: 30px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+p {
+  text-align: center;
+  font-size: 29px;
+}
+
+.form-control{
+  width: 200px;
+  text-align: center;
+}
+

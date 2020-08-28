@@ -13,48 +13,54 @@
 <body>
   <div class="hero-image">
     <div class="hero-text">
-      <h1>Time to order some pizza, dude!</h1>
+      <h1>LETS ORDER A PIZZA!</h1>
     </div>
   </div>
 <div class="container">
 <form id ="pizzaOrder">
-  <h2 class="text-center" style="margin-top:30px">Size</h2>
-  <input type="radio" name="size" value="10">
-  <label for="10">Small</label>
-  <input type="radio" checked name="size" value="15">
-  <label for="15">Medium</label>
-  <input type="radio" name="size" value="17">
-  <label for="17">Large</label>
-  <input type="radio" name="size" value="20">
-  <label for="20">Xtra-Large</label>
+  <div class="group-std">
+    <h2 class="text-center" style="margin-top:30px">Size</h2>
+    <input type="radio" name="size" value="10">
+    <label for="10">Small</label>
+    <input type="radio" checked name="size" value="15">
+    <label for="15">Medium</label>
+    <input type="radio" name="size" value="17">
+    <label for="17">Large</label>
+    <input type="radio" name="size" value="20">
+    <label for="20">Xtra-Large</label>
+  </div>
   <h2>Meat!</h2>
-  <div id="meatToppings">
-    <label><input type="Checkbox" name="lilPep" value="2">Little Pepperoni</label>
-    <label><input type="Checkbox" name="bigPep" value="3">Big Pepperoni</label>
-    <label><input type="Checkbox" name="chicken" value="2">Chicken</label>
+    <div id="meatToppings">
+      <div class="group-std">
+      <label><input type="Checkbox" name="lilPep" value="2">Little Pepperoni</label>
+      <label><input type="Checkbox" name="bigPep" value="3">Big Pepperoni</label>
+      <label><input type="Checkbox" name="chicken" value="2">Chicken</label>
+    </div>
   </div>
-  <div id="vegetableToppings">
-    <h2>Vegetables</h2>
-    <label><input type="Checkbox" name="greenPeppers" value="3">Green Peppers</label>
-    <label><input type="Checkbox" name="redOnions" value="3">Red Onions</label>
-    <label><input type="Checkbox" name="garlic" value="2">Garlic</label>
-  </div>
+  <h2>Vegetables</h2>
+    <div id="vegetableToppings">
+      <div class="group-std">
+      <label><input type="Checkbox" name="greenPeppers" value="3">Green Peppers</label>
+      <label><input type="Checkbox" name="redOnions" value="3">Red Onions</label>
+      <label><input type="Checkbox" name="garlic" value="2">Garlic</label>
+      </div>
+    </div>
   <h2>How Many Pizzas?</h2>
   <select class="form-control" id="quantity">
+    <div class="group-std">
     <option value="1">1</option>
     <option value="2">2</option>
     <option value="3">3</option>
     <option value="4">4</option>
+    </div>
   </select>
+  <div class='group-std'>
   <button type="submit">Place your order!</button>
-</form>
 </div>
 <div id="result">
   <p>Cowbunga! Your pizza is $<span id="order"></span>!!!</p>
 <button onclick="window.location.reload();">New Order!</button>
 </div>
-</div>
-</div>
-</div>
+</form>
 </body>
 </html>
