@@ -40,6 +40,7 @@ $(document).ready(function(){
         //Quantity Logic
         let quantity = parseInt($("#quantity").val());
         console.log(quantity);
+        
         //Pizza Logic
         let newPizza = new Pizza(size, meatsTotal, vegetablesTotal, quantity);
         $("#result").show();

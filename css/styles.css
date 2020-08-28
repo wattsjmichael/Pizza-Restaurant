@@ -1,3 +1,8 @@
 #result {
   display: none;
 }
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background: url(img/tmnt logo.jpg);
+}
