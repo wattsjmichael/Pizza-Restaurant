@@ -10,14 +10,14 @@
     <title>Pizza Restaurant</title>
 </head>
 <body>
-<div class= "container">
   <div class="hero-image">
     <div class="hero-text">
       <h1>Time to order some pizza, dude!</h1>
     </div>
-<h1>TNMT Pizzeria!</h1>
-<h2>Order up!</h2>
+  </div>
+<div class="container">
 <form id ="pizzaOrder">
+  <h2>Size</h2>
   <input type="radio" name="size" value="10">
   <label for="10">Small</label>
   <input type="radio" checked name="size" value="15">
@@ -47,8 +47,11 @@
   </select>
   <button type="submit">Place your order!</button>
 </form>
+</div>
 <div id="result">
   <p>Cowbunga! You pizza is $<span id="order"></span>!!!</p>
+  <div id="leo">
+  </div>
 </div>
 </div>
 </div>
