@@ -22,12 +22,7 @@
 }
 
 body, html {
- height: 100%;
- background-color: black;
+ height:100%;
+ background-color: white;
 }
 
-#leo {
-  height:681px;
-  width:750px;
-  background-image: url(/img/don.png);
-}
