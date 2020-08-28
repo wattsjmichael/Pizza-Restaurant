@@ -6,13 +6,17 @@ function Pizza(size, meat, veggie, addon) {
   this.price = "";
 }
 
-
+function pizzaSize(){
 
 
 
 $(document).ready(function(){
-    $("#formOne").submit(function(event){
+    $("#pizzaOrder").submit(function(event){
         event.preventDefault();
+
+    $("#button").on('click', function(){
+      output = 
+    })
    
     })
 })
