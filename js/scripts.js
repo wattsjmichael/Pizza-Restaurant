@@ -1,4 +1,4 @@
-function Pizza(size, meat, veggie, addon) {
+function Pizza(size, meat) {
   this.size = size;
   this.meat = meat;
   this.price = ""
@@ -16,18 +16,17 @@ $(document).ready(function(){
 
 
         let size = parseInt($("#size").val());
-        let meat = [];
+        let meats = [];
         $("#meat input:checked").each(function (i){
-          meat[i] = $(this).val();
+          meats[i] = $(this).val();
         });
         console.log(this.size)
 
-        let meatTotal = 0;
+        let meatsTotal = 0;
 
-        $.each(meat, function(){meatTotal+=parseInt(this) || 0;})
-
-        let newPizza = newPizza(size, meat);
-        
+        $.each(meats, function(){meatsTotal+=parseInt(this) || 0;});
+        let newPizza = new Pizza(size, meatsTotal);
+        console.log(Pizza);
         $("#result").show();
         $("#order").text(newPizza.pizzaPrice());
     });
