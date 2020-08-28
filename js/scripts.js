@@ -19,15 +19,6 @@ $(document).ready(function(){
     $("form#pizzaOrder").submit(function(event){
         event.preventDefault();
 
-        //animation logic
-        $("#don").animateSprite({
-          fps: 12,
-          animations: {
-            move: [0, 1,]
-          },
-          loop: true,
-          
-        });
 
         let size = parseInt($("input:radio[name=size]:checked").val());
         
@@ -56,7 +47,6 @@ $(document).ready(function(){
 
         //Pizza Logic
         let newPizza = new Pizza(size, meatsTotal, vegetablesTotal, quantity);
-        $("#don").show();
         $("#result").show();
         $("#order").text(newPizza.pizzaPrice());
     });
