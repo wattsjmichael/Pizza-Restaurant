@@ -16,17 +16,17 @@ $(document).ready(function(){
 
 
         let size = parseInt($("#size").val());
-        let meats = [];
-        $("#meat input:checked").each(function (i){
+        var meats = [];
+        $("#meatToppings input:checked").each(function (i){
           meats[i] = $(this).val();
         });
-        console.log(this.size)
 
         let meatsTotal = 0;
 
         $.each(meats, function(){meatsTotal+=parseInt(this) || 0;});
+        
         let newPizza = new Pizza(size, meatsTotal);
-        console.log(Pizza);
+        console.log(meatsTotal);
         $("#result").show();
         $("#order").text(newPizza.pizzaPrice());
     });
