@@ -36,8 +36,12 @@ $(document).ready(function(){
           vegetables[i] = $(this).val();
         });
         let vegetablesTotal = 0;
-        $.each(vegetables, function(){vegetablesTotal+=parseInt(this) || 0;})
+        $.each(vegetables, function(){vegetablesTotal+=parseInt(this) || 0;});
         
+        function playAudio(url){
+          new Audio(url).play();
+        }
+
         //Quantity Logic
         let quantity = parseInt($("#quantity").val());
         console.log(quantity);

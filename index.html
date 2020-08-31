@@ -13,13 +13,13 @@
 <body>
   <div class="hero-image">
     <div class="hero-text">
-      <h1>LETS ORDER A PIZZA!</h1>
+      <h1>LET'S ORDER A PIZZA!</h1>
     </div>
   </div>
 <div class="container">
 <form id ="pizzaOrder">
   <div class="group-std">
-    <h2 class="text-center" style="margin-top:30px">Size</h2>
+    <h2 class="text-center">Size</h2>
     <input type="radio" name="size" value="10">
     <label for="10">Small</label>
     <input type="radio" checked name="size" value="15">
@@ -29,7 +29,7 @@
     <input type="radio" name="size" value="20">
     <label for="20">Xtra-Large</label>
   </div>
-  <h2>Meat!</h2>
+  <h2>Meat</h2>
     <div id="meatToppings">
       <div class="group-std">
       <label><input type="Checkbox" name="lilPep" value="2">Little Pepperoni</label>
@@ -46,6 +46,10 @@
       <label><input type="Checkbox" name="greenPeppers" value="3">Green Peppers</label>
       <label><input type="Checkbox" name="redOnions" value="3">Red Onions</label>
       <label><input type="Checkbox" name="garlic" value="2">Garlic</label>
+      <label><input type="Checkbox" name="spinach" value="3">Spinach</label>
+      <label><input type="Checkbox" name="greenOnions" value="3">Green Onions</label>
+      <label><input type="Checkbox" name="tomatoes" value="2">Sliced Tomatoes</label>
+
       </div>
     </div>
   <h2>How Many Pizzas?</h2>
@@ -61,7 +65,7 @@
   <button type="submit">Place your order!</button>
 </div>
 <div id="result">
-  <p>Cowbunga! Your pizza is $<span id="order"></span>!!!</p>
+  <p>Cowabunga! Your pizza is $<span id="order"></span>!!!</p>
 <button onclick="window.location.reload();">New Order!</button>
 </div>
 </form>

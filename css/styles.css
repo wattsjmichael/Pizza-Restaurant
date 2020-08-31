@@ -50,3 +50,6 @@ p {
   text-align: center;
 }
 
+#quantity {
+  display: inline-block;
+}
