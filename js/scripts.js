@@ -38,10 +38,10 @@ $(document).ready(function(){
         let vegetablesTotal = 0;
         $.each(vegetables, function(){vegetablesTotal+=parseInt(this) || 0;});
         
-        function playAudio(url){
-          new Audio(url).play();
-        }
-
+        $("#cowabunga").click(function(){
+          const audio = new Audio("./sounds/pizza-i-need-it.mp3");
+          audio.play();
+        })
         //Quantity Logic
         let quantity = parseInt($("#quantity").val());
         console.log(quantity);

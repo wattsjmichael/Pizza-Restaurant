@@ -4,7 +4,7 @@
 
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-  background: url(/img/tmnt-pizza-time.jpg);
+  background: url(../img/tmnt-pizza-time.jpg);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -22,11 +22,10 @@
 }
 
 body, html {
- height:100%;
- background-color: white;
- background-image: url(/img/Brick.jpg);
- color: white;
- background-size: cover;
+  height:100%;
+  background-image: url(../img/Brick.jpg);
+  color: white;
+  background-size: cover;
 }
 
 #pizzaOrder {
