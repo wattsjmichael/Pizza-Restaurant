@@ -40,7 +40,7 @@ $(document).ready(function(){
         
         //Audio logic
         $("#cowabunga").click(function(){
-          const audio = new Audio("./sounds/pizza-i-need-it.mp3");
+          const audio = new Audio("../sounds/pizza-i-need-it.mp3");
           audio.play();
         })
 

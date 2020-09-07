@@ -16,6 +16,26 @@ _OR_
 * _Open any of the files in the directory in your text editor for viewing/editing_
 * _Open the index.html file in your preferred browser or text editor preview function_
 
+## Specs
+
+* The user selects what size pizza and is used in a calculation.
+>* Input: Select Large Size.
+>* Output: There is a base number that added to the "size" equation.
+
+* The user selects multiple toppings, either vegetables or meats or both and is used in a calculation.
+>* Input: Selects multiple toppings. 
+>* Output: Each topping has a value assigned to it that is used in "meat" and "vegetable" calculation.
+
+* The user selects the number of pizzas (1-4).
+>* Input: Selects the number of pizzas.
+>* Output: Each number of pizza either doubles, triples, or quardruples the ending total.
+
+* The user can reload the page.
+>* Input: Clicks the reload button after ordering.
+>* Output: The page refreshes.
+
+
+
 ## Support and contact details
 
 _{Contact Michael Watts <Wattsjmichael@gmail.com>}_
